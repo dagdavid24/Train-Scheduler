@@ -1,0 +1,32 @@
+.jumbotron {
+    background-color: #2B2D42;
+    color: white;
+    box-shadow: 0 10px 20px 0 rgba(22, 25, 32, 0.19), 0 6px 7px 0 rgba(22, 25, 32, 0.123);
+    text-align: center;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 1em 0;
+    padding: 0; 
+}
+.card {
+    width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px 0 rgba(22, 25, 32, 0.19), 0 6px 7px 0 rgba(22, 25, 32, 0.26);
+}
+.card-title {
+    background-color: #5C6672;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.btn {
+    background-color: #2B2D42;
+}
+.btn:hover {
+    background-color:  rgb(230, 230, 230);
+    color: black;
+}
