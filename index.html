@@ -8,6 +8,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
 </head>
 
 <body>
@@ -37,35 +38,35 @@
                 </thead>
                 <tbody>
                     <tr class="table-light">
-                        <th scope="row">Movers And Shakers</th>
-                        <td>Oshawa</td>
-                        <td>6</td>
-                        <td>02:45 PM</td>
-                        <td>10</td>
+                        <td  id="display-train">Movers And Shakers</td>
+                        <td  id="display-dest">Ottawa</td>
+                        <td  id="display-freq">6</td>
+                        <td  id="display-arrive">02:45 PM</td>
+                        <td  id="display-away">10</td>
                     </tr>
                     <tr>
-                        <th scope="row">Away Rail</th>
+                        <td>Away Rail</td>
                         <td>Toronto</td>
                         <td>10</td>
                         <td>02:45 PM</td>
                         <td>10</td>
                     </tr>
                     <tr>
-                        <th scope="row">InstaTrain</th>
+                        <td>InstaTrain</td>
                         <td>Boston</td>
                         <td>5</td>
                         <td>02:45 PM</td>
                         <td>10</td>
                     </tr>
                     <tr>
-                        <th scope="row">Faster Than Car Ltd.</th>
+                        <td>Faster Than Car Ltd.</td>
                         <td>Vancouver</td>
                         <td>15</td>
                         <td>02:45 PM</td>
                         <td>10</td>
                     </tr>
                     <tr>
-                        <th scope="row">Swift Inc.</th>
+                        <td>Swift Inc.</td>
                         <td>Chicago</td>
                         <td>20</td>
                         <td>02:45 PM</td>
@@ -81,26 +82,28 @@
             <h4 class="card-title">Add Train</h4>
             <form>
                 <div class="form-group">
-                    <label for="formGroupExampleInput"><strong>Train Name</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
+                    <label for="train-name"><strong>Train Name</strong></label>
+                    <input type="text" class="form-control" id="train-name">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2"><strong>Destination</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                    <label for="destination"><strong>Destination</strong></label>
+                    <input type="text" class="form-control" id="destination">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2"><strong>First Train Time (hh:mm)</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput3">
+                    <label for="first-train-time"><strong>First Train Time (hh:mm)</strong></label>
+                    <input type="text" class="form-control" id="first-train-time">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2"><strong>Frequency Min</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput4">
+                    <label for="frequency"><strong>Frequency Min</strong></label>
+                    <input type="text" class="form-control" id="frequency">
                 </div>
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button id="click-button" type="button" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
     <br><br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/train.js"></script>
 </body>
 
 </html>
