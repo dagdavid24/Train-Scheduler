@@ -59,7 +59,7 @@ $("#click-button").on("click", function (event) {
     console.log("ARRIVAL TIME: " + arrival);
 
     // Change what is saved in firebase
-    database.ref().push({
+    database.ref().set({
         trainName: trainName,
         destination: destination,
         firstTrainTime: firstTrainTime,
