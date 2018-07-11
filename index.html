@@ -37,42 +37,7 @@
                         <th>Minutes Away</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="table-light">
-                        <td  id="display-train">Movers And Shakers</td>
-                        <td  id="display-dest">Ottawa</td>
-                        <td  id="display-freq">6</td>
-                        <td  id="display-arrive">02:45 PM</td>
-                        <td  id="display-away">10</td>
-                    </tr>
-                    <tr>
-                        <td>Away Rail</td>
-                        <td>Toronto</td>
-                        <td>10</td>
-                        <td>02:45 PM</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>InstaTrain</td>
-                        <td>Boston</td>
-                        <td>5</td>
-                        <td>02:45 PM</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Faster Than Car Ltd.</td>
-                        <td>Vancouver</td>
-                        <td>15</td>
-                        <td>02:45 PM</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Swift Inc.</td>
-                        <td>Chicago</td>
-                        <td>20</td>
-                        <td>02:45 PM</td>
-                        <td>10</td>
-                    </tr>
+                <tbody id="table">
                 </tbody>
             </table>
         </div>
@@ -84,19 +49,19 @@
             <form>
                 <div class="form-group">
                     <label for="train-name"><strong>Train Name</strong></label>
-                    <input type="text" class="form-control" id="train-name">
+                    <input type="text" class="form-control" id="train-name" placeholder="Required">
                 </div>
                 <div class="form-group">
                     <label for="destination"><strong>Destination</strong></label>
-                    <input type="text" class="form-control" id="destination">
+                    <input type="text" class="form-control" id="destination" placeholder="Required">
                 </div>
                 <div class="form-group">
                     <label for="first-train-time"><strong>First Train Time (hh:mm)</strong></label>
-                    <input type="text" class="form-control" id="first-train-time">
+                    <input type="text" class="form-control" id="first-train-time" placeholder="00:00">
                 </div>
                 <div class="form-group">
                     <label for="frequency"><strong>Frequency Min</strong></label>
-                    <input type="text" class="form-control" id="frequency">
+                    <input type="text" class="form-control" id="frequency" placeholder="Required">
                 </div>
                 <button id="click-button" type="button" class="btn btn-primary">Submit</button>
             </form>
